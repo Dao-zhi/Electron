@@ -10,9 +10,6 @@ function onClick_GetSizePosition(){
 
 function onClick_SetSizePosition() {
     const win = remote.getCurrentWindow();
-    //win.setSize(400,400, true);
-    //win.setPosition(200,300,true);
-
-    win.setSize(400,400);
-    win.setPosition(200,300);
+    win.setSize(400,400, true);
+    win.setPosition(200,300,true);
 }

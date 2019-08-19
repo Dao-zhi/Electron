@@ -15,6 +15,7 @@ setFullScreen方法可以动态将窗口设置为全屏状态，但fullscreenabl
 const {app,BrowserWindow} = require('electron');
 function createWindow() {
     win = new BrowserWindow({width:400,height:400});
+    //win = new BrowserWindow({width:400,height:400,fullscreen:true});
     win.loadFile('index.html');
     win.setFullScreen(true);
     win.isFullScreen();
