@@ -8,7 +8,8 @@
  */
 const {app,BrowserWindow} = require('electron');
 function createWindow() {
-    win = new BrowserWindow({});
+    win = new BrowserWindow({webPreferences: {nodeIntegration: true}});
+    //win = new BrowserWindow({fullscreen:true,kiosk:true});
     win.loadFile('index.html');
 
     win.on('closed',()=> {
