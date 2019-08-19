@@ -10,7 +10,7 @@
             "request": "launch",
             "name": "Debug Main Electron",
             "runtimeExecutable": "C:/Users/Daozhi/AppData/Roaming/npm/electron",
-            "program": "${workspaceFolder}/src/windows/icon/index.js"
+            "program": "${workspaceFolder}/src/windows/parent-child/index.js"
         }
 
     ]

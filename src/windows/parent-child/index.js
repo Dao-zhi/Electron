@@ -13,7 +13,7 @@ function createWindow() {
     //  创建父窗口
     parentWin = new BrowserWindow();
     //  创建子窗口
-    childWin = new BrowserWindow({parent:parentWin,width:100,height:100});
+    childWin = new BrowserWindow({parent:parentWin,width:200,height:200});
     parentWin.loadFile('index.html');
 
     childWin.loadFile('child.html');
