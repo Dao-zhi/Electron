@@ -28,8 +28,10 @@ setPosition(x,y,flag) flag：true，以动画效果改变位置（仅限于Mac O
 
 const {app,BrowserWindow} = require('electron');
 function createWindow() {
-    win = new BrowserWindow({width:400,height:600,minWidth:200,minHeight:300,
-    maxWidth:600,maxHeight:600,x:20,y:20});
+    // win = new BrowserWindow({width:400,height:600,minWidth:200,minHeight:300,maxWidth:600,maxHeight:600,x:20,y:20});
+    
+    //注意：在新版本的electron中要加webPreferences: {nodeIntegration: true}才能在其他  进程中用require
+    win = new BrowserWindow({width:400,height:600,webPreferences: {nodeIntegration: true}});
     win.loadFile('index.html');
 
     win.on('closed',()=> {
