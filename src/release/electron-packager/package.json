@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "electron-packager": "^12.1.2"
+    "electron-packager": "^16.0.0"
   }
 }
